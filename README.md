@@ -1,13 +1,12 @@
-<h1>ExpNo 1 :Developing AI Agent with PEAS Description</h1>
+# ExpNo 1 :Developing AI Agent with PEAS Description
 <h3>Name: ANJALI K</h3>
 <h3>Register Number: 212224040024</h3>
 
 
-<h3>AIM:</h3>
-<br>
+# AIM:
 <p>To find the PEAS description for the given AI problem and develop an AI agent.</p>
-<br>
-<h3>Theory</h3>
+
+# Theory
 <h3>Medicine prescribing agent:</h3>
 <p>Such this agent prescribes medicine for fever (greater than 98.5 degrees) which we consider here as unhealthy, by the user temperature input, and another environment is rooms in the hospital (two rooms). This agent has to consider two factors one is room location and an unhealthy patient in a random room, the agent has to move from one room to another to check and treat the unhealthy person. The performance of the agent is calculated by incrementing performance and each time after treating in one room again it has to check another room so that the movement causes the agent to reduce its performance. Hence, agents prescribe medicine to unhealthy.</p>
 <hr>
@@ -29,7 +28,8 @@
   </tr>
 </table>
 <hr>
-<H3>DESIGN STEPS</H3>
+
+# DESIGN STEPS
 <h3>STEP 1:Identifying the input:</h3>
 <p>Temperature from patients, Location.</p>
 <h3>STEP 2:Identifying the output:</h3>
@@ -40,7 +40,8 @@
 <p>Treat unhealthy patients in each room. And check for the unhealthy patients in random room</p>
 <h3>STEP 5:</h3>
 <p>Measure the performance parameters: For each treatment performance incremented, for each movement performance decremented</p>
-<h3>PROGRAM</h3>
+
+# PROGRAM
 
 ```
 import random
@@ -112,10 +113,9 @@ for room in rooms:
 print("\n===== Performance Report =====")
 print("Final Performance Score:", performance)
 ```
-<h3>OUTPUT<h3>
+# OUTPUT
 
 <img width="620" height="678" alt="image" src="https://github.com/user-attachments/assets/b18736a5-a145-4c21-b293-7147621d9efe" />
 
-<h3>RESULT<H3>
-
+# RESULT
 The Medicine Prescribing AI Agent was successfully developed using the PEAS framework. It identified the patient's condition based on body temperature, prescribed appropriate treatment, moved between rooms to locate the patient, and measured its performance based on treatment and movement.
