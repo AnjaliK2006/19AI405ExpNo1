@@ -1,4 +1,4 @@
-<img width="620" height="678" alt="image" src="https://github.com/user-attachments/assets/1613edde-6c71-4b0e-983d-2d5545d8a49f" /><h1>ExpNo 1 :Developing AI Agent with PEAS Description</h1>
+<h1>ExpNo 1 :Developing AI Agent with PEAS Description</h1>
 <h3>Name: ANJALI K</h3>
 <h3>Register Number: 212224040024</h3>
 
@@ -113,7 +113,7 @@ print("Final Performance Score:", performance)
 ```
 <h3>OUTPUT<h3>
 
-<img width="620" height="678" alt="image" src="https://github.com/user-attachments/assets/cb91534a-adba-4113-b092-adbf3b446c2b" />
+<img width="620" height="678" alt="image" src="https://github.com/user-attachments/assets/b18736a5-a145-4c21-b293-7147621d9efe" />
 
 <h3>RESULT<H3>
 
