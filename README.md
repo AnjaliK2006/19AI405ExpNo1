@@ -1,6 +1,6 @@
-<h1>ExpNo 1 :Developing AI Agent with PEAS Description</h1>
-<h3>Name: Saravanan N</h3>
-<h3>Register Number/Staff Id: TSML006</h3>
+<img width="620" height="678" alt="image" src="https://github.com/user-attachments/assets/1613edde-6c71-4b0e-983d-2d5545d8a49f" /><h1>ExpNo 1 :Developing AI Agent with PEAS Description</h1>
+<h3>Name: ANJALI K</h3>
+<h3>Register Number: 212224040024</h3>
 
 
 <h3>AIM:</h3>
@@ -40,3 +40,81 @@
 <p>Treat unhealthy patients in each room. And check for the unhealthy patients in random room</p>
 <h3>STEP 5:</h3>
 <p>Measure the performance parameters: For each treatment performance incremented, for each movement performance decremented</p>
+<h3>PROGRAM</h3>
+```
+import random
+
+#Performance measure
+performance = 0
+
+#Hospital rooms
+rooms = ["Room 1", "Room 2"]
+
+#Randomly place the patient in one room
+patient_room = random.choice(rooms)
+
+#Agent starts from Room 1
+current_room = "Room 1"
+
+#Get patient's temperature
+temperature = float(input("Enter patient's body temperature (°F): "))
+
+print("\n===== Medicine Prescribing AI Agent =====")
+print(f"Patient is in a random room.\n")
+
+#Check each room
+for room in rooms:
+
+    # Move to another room if required
+    if current_room != room:
+        print(f"Moving from {current_room} to {room}...")
+        performance -= 1
+        current_room = room
+
+    print(f"\nChecking {room}...")
+
+    if room == patient_room:
+        print("Patient found!")
+
+        # Decision making based on temperature
+        if temperature < 90 or temperature > 110:
+            print(f"Temperature: {temperature}°F")
+            print("Invalid body temperature entered.")
+
+        elif temperature < 95:
+            print(f"Temperature: {temperature}°F")
+            print("Patient has Hypothermia.")
+            print("Immediate medical attention required.")
+            performance += 1
+
+        elif temperature <= 99:
+            print(f"Temperature: {temperature}°F")
+            print("Patient is Healthy.")
+            print("No medicine required.")
+
+        elif temperature <= 102:
+            print(f"Temperature: {temperature}°F")
+            print("Patient has Mild Fever.")
+            print("Prescribing Paracetamol.")
+            performance += 1
+
+        else:
+            print(f"Temperature: {temperature}°F")
+            print("Patient has High Fever.")
+            print("Immediate medical treatment required.")
+            print("Prescribing appropriate medicine.")
+            performance += 1
+
+    else:
+        print("No patient in this room.")
+
+print("\n===== Performance Report =====")
+print("Final Performance Score:", performance)
+```
+<h3>OUTPUT<h3>
+
+<img width="620" height="678" alt="image" src="https://github.com/user-attachments/assets/cb91534a-adba-4113-b092-adbf3b446c2b" />
+
+<h3>RESULT<H3>
+
+The Medicine Prescribing AI Agent was successfully developed using the PEAS framework. It identified the patient's condition based on body temperature, prescribed appropriate treatment, moved between rooms to locate the patient, and measured its performance based on treatment and movement.
